@@ -7,153 +7,164 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html">Техномарт</a>
-            <form action="https://echo.htmlacademy.ru" method="GET">
-                <input type="text" placeholder="Поиск:">
+    <header class="main-header">
+        <div class="main-header__topbar">
+            <a class="logo" href="index.html">
+                <img src="img/icons/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+            </a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                <input class="search-form__input" type="text" placeholder="Поиск:">
             </form>
-            <ul>
+            <ul class="user-navigation">
                 <li>
-                    <a href="blank.html">Закладки: <span>0</span></a>
+                    <a class="link user-navigation__link" href="blank.html">Закладки: <span>0</span></a>
                 </li>
                 <li>
-                    <a href="blank.html">Корзина: <span>0</span></a>
+                    <a class="link user-navigation__link" href="blank.html">Корзина: <span>0</span></a>
                 </li>
                 <li>
-                    <a href="blank.html">Оформить заказ</a>
+                    <a class="link user-navigation__link user-navigation__checkout" href="blank.html">Оформить заказ</a>
                 </li>
             </ul>
         </div>
-        <div>
-            <p>
+        <div class="main-header__info">
+            <p class="main-header__title">
                 Интернет-магазин строительных материалов и инструментов для ремонта
             </p>
-            <div>
-                <a href="tel:+78005558628">+7 800 555-86-28</a>
-                <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+            <div class="main-header__contacts">
+                <a class="main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                <p class="main-header__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
             </div>
 
-            <a href="blank.html">Войти</a>
-            <a href="blank.html">Регистрация</a>
+            <div class="profile">
+                <a class="link profile__btn" href="blank.html">Войти</a>
+                <a class="link profile__btn" href="blank.html">Регистрация</a>
 
-            <div>
-                <p>
-                    <a href="blank.html">Равшан Джамшутович</a>
-                    <a href="blank.html">Выход</a>
+                <p class="link profile__btn">
+                    <a class="link" href="blank.html">Равшан Джамшутович</a>
+                    <a class="link" href="blank.html">Выход</a>
                 </p>
-                <p>
-                    <a href="blank.html">Мои заказы</a>
-                    <a href="blank.html">Личный кабинет</a>
-                </p>
+
+                <ul class="profile__parts">
+                    <li>
+                        <a class="link profile__link" href="blank.html">Мои заказы</a>
+                    </li>
+                    <li>
+                        <a class="link profile__link" href="blank.html">Личный кабинет</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav>
-            <ul>
+        <nav class="main-navigation">
+            <ul class="site-navigation">
                 <li>
-                    <a href="index.html">Главная</a>
+                    <a class="link site-navigation__link" href="index.html">Главная</a>
                 </li>
                 <li>
-                    <a href="blank.html">Компания</a>
+                    <a class="link site-navigation__link" href="blank.html">Компания</a>
                 </li>
                 <li>
-                    <a href="catalog.html">Каталог</a>
+                    <a class="link site-navigation__link" href="catalog.html">Каталог</a>
                 </li>
                 <li>
-                    <a href="blank.html">Новости</a>
+                    <a class="link site-navigation__link" href="blank.html">Новости</a>
                 </li>
                 <li>
-                    <a href="blank.html">Спецпредложения</a>
+                    <a class="link site-navigation__link" href="blank.html">Спецпредложения</a>
                 </li>
                 <li>
-                    <a href="blank.html">Доставка</a>
+                    <a class="link site-navigation__link" href="blank.html">Доставка</a>
                 </li>
                 <li>
-                    <a href="blank.html">Контакты</a>
+                    <a class="link site-navigation__link" href="blank.html">Контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Информация о магазине</h1>
-        <p>
+    <main class="content">
+        <h1 class="title">Информация о магазине</h1>
+        <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, unde commodi obcaecati natus provident maxime rerum laudantium voluptatum odit sunt ratione culpa perspiciatis saepe. Quibusdam suscipit id natus recusandae hic.
         </p>
     </main>
-    <footer>
-        <div>
+    <footer class="main-footer">
+        <div class="main-footer__top">
             <div>
-                <a href="index.html">Техномарт</a>
-                <ul>
+                <a class="logo" href="index.html">
+                    <img src="img/icons/logo.svg" width="108" height="18" alt="Логотип Техномарт">
+                </a>
+                <ul class="site-navigation">
                     <li>
-                        <a href="blank.html">Компания</a>
+                        <a class="link main-footer__link site-navigation__link" href="blank.html">Компания</a>
                     </li>
                     <li>
-                        <a href="blank.html">Новости</a>
+                        <a class="link main-footer__link site-navigation__link" href="blank.html">Новости</a>
                     </li>
                     <li>
-                        <a href="catalog.html">Каталог</a>
+                        <a class="link main-footer__link site-navigation__link" href="catalog.html">Каталог</a>
                     </li>
                     <li>
-                        <a href="blank.html">Доставка</a>
+                        <a class="link main-footer__link site-navigation__link" href="blank.html">Доставка</a>
                     </li>
                     <li>
-                        <a href="blank.html">Контакты</a>
+                        <a class="link main-footer__link site-navigation__link" href="blank.html">Контакты</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <p>
+                <p class="text footer__text">
                     г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-                    <a href="tel:+78005558628">+7 800 555-86-28</a>
+                    <a class="link main-footer__link footer__phone" href="tel:+78005558628">+7 800 555-86-28</a>
                 </p>
-                <ul>
+                <ul class="special-navigation">
                     <li>
-                        <a href="blank.html">Материалы</a>
+                        <a class="link main-footer__link special-navigation__link" href="blank.html">Материалы</a>
                     </li>
                     <li>
-                        <a href="blank.html">Техника</a>
+                        <a class="link main-footer__link special-navigation__link" href="blank.html">Техника</a>
                     </li>
                     <li>
-                        <a href="blank.html">Инструмент</a>
+                        <a class="link main-footer__link special-navigation__link" href="blank.html">Инструмент</a>
                     </li>
                     <li>
-                        <a href="blank.html">Спецпредложения</a>
+                        <a class="link main-footer__link special-navigation__link" href="blank.html">Спецпредложения</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div>
-            <p>
+        <div class="main-footer__bottom">
+            <p class="text footer__text">
                 &copy; 2010–2021 Компания «Техномарт» Все права защищены
             </p>
-            <ul>
+            <ul class="social-list">
                 <li>
-                    <a href="https://vk.com">
-                      Группа во Вконтакте
-                    </a>
+                    <a class="social-list__link" href="https://vk.com">
+                  Группа во Вконтакте
+                </a>
                 </li>
                 <li>
-                    <a href="https://facebook.com">
-                      Группа в Фейсбук
-                    </a>
+                    <a class="social-list__link" href="https://facebook.com">
+                  Группа в Фейсбук
+                </a>
                 </li>
                 <li>
-                    <a href="https://instagram.com">
-                      Наш Инстаграм
-                    </a>
+                    <a class="social-list__link" href="https://instagram.com">
+                  Наш Инстаграм
+                </a>
                 </li>
             </ul>
-            <p>
-                Обратная связь:
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <p class="text footer__text contacts">
+                Обратная связь:<br>
+                <a class="link main-footer__link main-footer__link--yellow contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p>
-                Разработано -
-                <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+            <p class="text footer__text contacts">
+                Разработано -<br>
+                <a class="link main-footer__link main-footer__link--yellow contacts__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
             </p>
         </div>
     </footer>
