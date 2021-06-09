@@ -849,7 +849,10 @@
 /* BREADCRUMBS */
 
 .breadcrumbs {
+    grid-column: 1 / -1;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .breadcrumbs__link {
@@ -917,6 +920,8 @@
 
 .sort__list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sort__link {
@@ -971,6 +976,29 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
+}
+
+.catalog__wrapper {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: repeat(4, min-content);
+    column-gap: 21px;
+    row-gap: 20px;
+}
+
+.catalog__title {
+    grid-column: 1 / -1;
+}
+
+.filter {
+    grid-row: 3 / -1;
+}
+
+
+/* Временные стили для каталога */
+
+.products .product-list {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
