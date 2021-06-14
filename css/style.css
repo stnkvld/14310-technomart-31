@@ -116,12 +116,20 @@
     background-color: var(--basic-white);
 }
 
-.button:not(.button--light):hover {
+.button:hover {
     background-color: var(--hover-red);
 }
 
-.button:not(.button--light):active {
+.button:active {
     background-color: var(--active-red);
+}
+
+.button--light:hover {
+    background-color: var(--basic-white);
+}
+
+.button--light:active {
+    background-color: var(--basic-white);
 }
 
 .link {
