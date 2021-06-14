@@ -385,26 +385,28 @@
         <section class="modal feedback">
             <h2>Обратная связь</h2>
             <form class="feedback__form" action="https://echio.htmlacademy.ru" method="POST">
-                <p>
-                    <label class="feedback__label">
-                      Ваше имя:<br>
-                      <input class="feedback__input" type="text" placeholder="Имя Фамилия" name="name">
-                    </label>
-                </p>
-                <p>
-                    <label class="feedback__label">
-                      Ваш email:<br>
-                      <input class="feedback__input" type="text" placeholder="email@example.com" name="email">
-                    </label>
-                </p>
-                <p>
-                    <label class="feedback__label">
-                      Текст письма:<br>
-                      <textarea class="feedback__input feedback__textarea" placeholder="В свободной форме" name="text"></textarea>
-                    </label>
-                </p>
+                <div class="feedback__wrapper">
+                    <p class="feedback__group">
+                        <label class="feedback__label">
+                          <span class="feedback__label-title">Ваше имя:</span>
+                          <input class="feedback__input" type="text" placeholder="Имя Фамилия" name="name">
+                        </label>
+                    </p>
+                    <p class="feedback__group">
+                        <label class="feedback__label">
+                          <span class="feedback__label-title">Ваш email:</span>
+                          <input class="feedback__input" type="text" placeholder="email@example.com" name="email">
+                        </label>
+                    </p>
+                    <p class="feedback__group feedback__textarea-wrapper">
+                        <label class="feedback__label">
+                          <span class="feedback__label-title">Текст письма:</span>
+                          <textarea class="feedback__input feedback__textarea" placeholder="В свободной форме" name="text"></textarea>
+                        </label>
+                    </p>
+                </div>
                 <p class="feedback__actions">
-                    <button class="button" type="submit">Отправить</button>
+                    <button class="button feedback__submit" type="submit">Отправить</button>
                 </p>
             </form>
             <button class="modal__close" type="button">Закрыть окно</button>

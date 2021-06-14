@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -39,7 +39,7 @@
                 Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
             </p>
             <div class="main-header__contacts">
-                <a class="main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                <a class="link main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a>
                 <p class="main-header__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
             </div>
 
@@ -62,7 +62,7 @@
                 </ul>
             </div>
             <nav class="main-navigation">
-                <ul class="site-navigation">
+                <ul class="site-navigation site-navigation--shadow">
                     <li>
                         <a class="link site-navigation__link" href="index.html">Главная</a>
                     </li>
@@ -91,16 +91,16 @@
     <main class="content catalog">
         <div class="container catalog__wrapper">
             <ul class="breadcrumbs">
-                <li>
+                <li class="breadcrumbs__item">
                     <a class="link breadcrumbs__link" href="index.html">Главная</a>
                 </li>
-                <li>
+                <li class="breadcrumbs__item">
                     <a class="link breadcrumbs__link" href="catalog.html">Каталог</a>
                 </li>
-                <li>
+                <li class="breadcrumbs__item">
                     <a class="link breadcrumbs__link" href="catalog.html">Инструмент</a>
                 </li>
-                <li>
+                <li class="breadcrumbs__item">
                     <a class="link breadcrumbs__link">Перфораторы</a>
                 </li>
             </ul>
@@ -176,30 +176,30 @@
             <section class="sort">
                 <h2 class="sort__title">Сортировка:</h2>
                 <ul class="sort__list">
-                    <li>
+                    <li class="sort__item">
                         <a class="link sort__link">
-                        По цене
-                    </a>
+                            По цене
+                        </a>
                     </li>
-                    <li>
+                    <li class="sort__item">
                         <a class="link sort__link" href="catalog.html">
-                        По типу
-                    </a>
+                            По типу
+                        </a>
                     </li>
-                    <li>
+                    <li class="sort__item">
                         <a class="link sort__link" href="catalog.html">
-                        По функционалу
-                    </a>
+                            По функционалу
+                        </a>
                     </li>
-                    <li>
+                    <li class="sort__item">
                         <a class="link sort__link" href="catalog.html">
-                        По возрастанию
-                    </a>
+                            По возрастанию
+                        </a>
                     </li>
-                    <li>
+                    <li class="sort__item">
                         <a class="link sort__link" href="catalog.html">
-                        По убыванию
-                    </a>
+                            По убыванию
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -382,16 +382,16 @@
                     </li>
                 </ul>
                 <ul class="paginator">
-                    <li>
+                    <li class="paginator__item">
                         <a class="link paginator__link">1</a>
                     </li>
-                    <li>
+                    <li class="paginator__item">
                         <a class="link paginator__link" href="#">2</a>
                     </li>
-                    <li>
+                    <li class="paginator__item">
                         <a class="link paginator__link" href="#">3</a>
                     </li>
-                    <li>
+                    <li class="paginator__item">
                         <a class="link paginator__link" href="#">Следующая</a>
                     </li>
                 </ul>
@@ -400,16 +400,16 @@
         <section class="category-text">
             <div class="container">
                 <h2 class="title">Пара слов о перфораторах</h2>
-                <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-                    шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+                <p class="text category-text__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                    дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
         </section>
         <section class="modal added-cart">
             <h2>Покупка товара</h2>
             <p class="added-cart__title">Товар добавлен в корзину!</p>
             <p class="added-cart__actions">
-                <a class="button" href="blank.html">Оформить заказ</a>
-                <a class="button button--light" href="blank.html">Продолжить покупки</a>
+                <a class="button added-cart__button" href="blank.html">Оформить заказ</a>
+                <a class="button button--light added-cart__button" href="blank.html">Продолжить покупки</a>
             </p>
             <button class="modal__close" type="button">Закрыть окно</button>
         </section>
@@ -417,42 +417,42 @@
     <footer class="main-footer">
         <div class="main-footer__top">
             <div class="container main-footer__top-container">
-                <a class="logo logo--narrow" href="index.html">
+                <a class="logo logo--narrow">
                     <img class="logo__image" src="img/icons/logo.svg" width="138" height="23" alt="Логотип Техномарт">
                 </a>
-                <ul class="site-navigation main-footer__site-navigation">
-                    <li>
-                        <a class="link main-footer__link site-navigation__link" href="blank.html">Компания</a>
+                <ul class="footer-navigation main-footer__navigation">
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link" href="blank.html">Компания</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link site-navigation__link" href="blank.html">Новости</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link" href="blank.html">Новости</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link site-navigation__link">Каталог</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link">Каталог</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link site-navigation__link" href="blank.html">Доставка</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link" href="blank.html">Доставка</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link site-navigation__link" href="blank.html">Контакты</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link" href="blank.html">Контакты</a>
                     </li>
                 </ul>
                 <p class="text main-footer__text main-footer__address">
                     г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
                     <a class="link main-footer__link main-footer__phone" href="tel:+78005558628">+7 800 555-86-28</a>
                 </p>
-                <ul class="special-navigation main-footer__special-navigation">
-                    <li>
-                        <a class="link main-footer__link special-navigation__link" href="blank.html">Материалы</a>
+                <ul class="footer-navigation main-footer__special-navigation">
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link main-footer__link--yellow" href="blank.html">Материалы</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link special-navigation__link" href="blank.html">Техника</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link main-footer__link--yellow" href="blank.html">Техника</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link special-navigation__link" href="blank.html">Инструмент</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link main-footer__link--yellow" href="blank.html">Инструмент</a>
                     </li>
-                    <li>
-                        <a class="link main-footer__link special-navigation__link" href="blank.html">Спецпредложения</a>
+                    <li class="footer-navigation__item">
+                        <a class="link main-footer__link footer-navigation__link main-footer__link--yellow" href="blank.html">Спецпредложения</a>
                     </li>
                 </ul>
             </div>

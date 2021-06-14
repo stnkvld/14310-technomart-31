@@ -62,6 +62,7 @@
     --basic-darkgray: #A9A9A9;
     --basic-lightgray: #E5E5E5;
     --active-gray: #C5C5C5;
+    --actions-gray: #F1F1F1;
     --special-yellow: #FFBF47;
     --special-blue: #3BBCE3;
     --special-purple: #DC91D8;
@@ -898,19 +899,53 @@
     margin: 0 auto;
 }
 
+.feedback__wrapper {
+    width: 460px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 13px;
+    margin: 0 auto;
+}
+
+.feedback__group {
+    margin: 0;
+}
+
 .feedback__label {
+    display: block;
     font-size: 18px;
 }
 
+.feedback__label-title {
+    display: block;
+    margin-bottom: 11px;
+}
+
 .feedback__input {
+    width: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     border: 2px solid var(--active-gray);
     border-radius: 2px;
 }
 
+.feedback__textarea-wrapper {
+    grid-column: 1 / -1;
+}
+
 .feedback__textarea {
     resize: none;
+}
+
+.feedback__actions {
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.feedback__submit {
+    width: 460px;
 }
 
 .search-form__input {
@@ -953,13 +988,19 @@
 /* BREADCRUMBS */
 
 .breadcrumbs {
+    display: flex;
     grid-column: 1 / -1;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+.breadcrumbs__item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .breadcrumbs__link {
+    font-family: "PT Sans", "Arial", sans-serif;
     line-height: 18px;
     color: var(--basic-black);
     text-transform: uppercase;
@@ -981,7 +1022,19 @@
     font: inherit;
     line-height: 18px;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.filter__title,
+.sort {
     background-color: var(--filter-bg);
+    padding: 10px 18px;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .filter__set:not(:last-child) {
@@ -1014,18 +1067,42 @@
 }
 
 .filter__submit {
+    width: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     color: var(--basic-black);
+    text-align: center;
     text-transform: uppercase;
     background-color: var(--basic-white);
     border: 1px solid var(--basic-lightgray);
     cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 34px;
 }
 
 .sort__list {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.sort__item {
+    line-height: 18px;
+}
+
+.sort__item:not(:first-child) {
+    margin-left: 65px;
+}
+
+.sort__item:last-child {
+    margin-left: 21px;
+}
+
+.sort__item:nth-last-child(2) {
+    margin-left: 46px;
 }
 
 .sort__link {
@@ -1046,19 +1123,29 @@
 /* CATALOG PRODUCTS */
 
 .paginator {
+    display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
 }
 
-.category-text {
-    background-color: var(--basic-bg);
+.paginator__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .paginator__link {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
     font-family: "PT Sans", "Arial", sans-serif;
+    line-height: 38px;
+    text-align: center;
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--basic-white);
     border: 1px solid var(--basic-lightgray);
+    border-radius: 2px;
 }
 
 .paginator__link:hover {
@@ -1076,10 +1163,38 @@
     border: 0;
 }
 
+.category-text {
+    background-color: var(--basic-bg);
+    padding-top: 64px;
+    padding-bottom: 68px;
+}
+
+.category-text__text {
+    width: 907px;
+}
+
+.added-cart {
+    width: 620px;
+    margin: 0 auto;
+}
+
 .added-cart__title {
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
     line-height: 30px;
+}
+
+.added-cart__actions {
+    display: flex;
+    justify-content: center;
+    background-color: var(--actions-gray);
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.added-cart__button:not(:last-child) {
+    margin-right: 10px;
 }
 
 .catalog__wrapper {
@@ -1088,10 +1203,13 @@
     grid-template-rows: repeat(4, min-content);
     column-gap: 21px;
     row-gap: 20px;
+    padding-top: 22px;
+    padding-bottom: 60px;
 }
 
 .catalog__title {
     grid-column: 1 / -1;
+    padding: 30px;
 }
 
 .filter {
@@ -1107,3 +1225,8 @@
 
 
 /* END CATALOG PRODUCTS */
+
+.blank-info {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
