@@ -20,13 +20,26 @@
                 </a>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                     <input class="search-form__input" type="text" placeholder="Поиск:">
+                    <svg class="search-form__icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"
+                fill="#fff"/>
+            </svg>
                 </form>
                 <ul class="user-navigation">
                     <li>
-                        <a class="link user-navigation__link" href="blank.html">Закладки: <span>0</span></a>
+                        <a class="link user-navigation__link" href="blank.html">
+                            <svg class="user-navigation__icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" fill="#fff"/>
+                    </svg> Закладки: <span>0</span>
+                        </a>
                     </li>
                     <li>
-                        <a class="link user-navigation__link" href="blank.html">Корзина: <span>0</span></a>
+                        <a class="link user-navigation__link" href="blank.html">
+                            <svg class="user-navigation__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/></svg>                            Корзина: <span>0</span>
+                        </a>
                     </li>
                     <li>
                         <a class="link user-navigation__link user-navigation__checkout" href="blank.html">Оформить заказ</a>
@@ -44,47 +57,62 @@
             </div>
 
             <div class="profile">
-                <a class="link profile__btn" href="blank.html">Войти</a>
-                <a class="link profile__btn" href="blank.html">Регистрация</a>
+                <div class="profile__auth" style="display: none;">
+                    <a class="link profile__btn profile__btn--login" href="blank.html">
+                        <svg class="profile__btn-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" fill="#C5C5C5"/><path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="#C5C5C5"/>
+            </svg> Войти
+                    </a>
+                    <a class="link profile__btn" href="blank.html">Регистрация</a>
+                </div>
 
-                <p class="link profile__btn">
-                    <a class="link" href="blank.html">Равшан Джамшутович</a>
-                    <a class="link" href="blank.html">Выход</a>
-                </p>
+                <div class="profile__logged">
+                    <a class="link profile__btn logged-btn" href="blank.html">
+                        <svg class="logged-btn__user" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
+                </svg> Равшан Джамшутович
+                        <svg class="logged-btn__logout" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
+                </svg>
+                    </a>
 
-                <ul class="profile__parts">
-                    <li>
-                        <a class="link profile__link" href="blank.html">Мои заказы</a>
-                    </li>
-                    <li>
-                        <a class="link profile__link" href="blank.html">Личный кабинет</a>
-                    </li>
-                </ul>
+                    <ul class="profile__parts">
+                        <li class="profile__part">
+                            <a class="link profile__link" href="blank.html">Мои заказы</a>
+                        </li>
+                        <li class="profile__part">
+                            <a class="link profile__link" href="blank.html">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <nav class="main-navigation">
-                <ul class="site-navigation">
-                    <li>
-                        <a class="link site-navigation__link" href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="blank.html">Компания</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="catalog.html">Каталог</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="blank.html">Новости</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="blank.html">Спецпредложения</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="blank.html">Доставка</a>
-                    </li>
-                    <li>
-                        <a class="link site-navigation__link" href="blank.html">Контакты</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="site-navigation site-navigation--shadow">
+                        <li>
+                            <a class="link site-navigation__link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="blank.html">Компания</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="blank.html">Новости</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="blank.html">Спецпредложения</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="blank.html">Доставка</a>
+                        </li>
+                        <li>
+                            <a class="link site-navigation__link" href="blank.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -99,7 +127,7 @@
     <footer class="main-footer">
         <div class="main-footer__top">
             <div class="container main-footer__top-container">
-                <a class="logo logo--narrow">
+                <a class="logo logo--narrow" href="index.html">
                     <img class="logo__image" src="img/icons/logo.svg" width="138" height="23" alt="Логотип Техномарт">
                 </a>
                 <ul class="footer-navigation main-footer__navigation">
@@ -145,29 +173,29 @@
                     &copy; 2010–2021 Компания «Техномарт»<br> Все права защищены
                 </p>
                 <ul class="social-list">
-                    <li>
-                        <a class="social-list__link" href="https://vk.com">
-                    Группа во Вконтакте
-                </a>
+                    <li class="social-list__item">
+                        <a class="social-list__link social-list__link--vk" href="https://vk.com">
+                            <span class="visually-hidden">Группа во Вконтакте</span>
+                        </a>
                     </li>
-                    <li>
-                        <a class="social-list__link" href="https://facebook.com">
-                    Группа в Фейсбук
-                </a>
+                    <li class="social-list__item">
+                        <a class="social-list__link social-list__link--fb" href="https://facebook.com">
+                            <span class="visually-hidden">Группа в Фейсбук</span>
+                        </a>
                     </li>
-                    <li>
-                        <a class="social-list__link" href="https://instagram.com">
-                    Наш Инстаграм
-                </a>
+                    <li class="social-list__item">
+                        <a class="social-list__link social-list__link--inst" href="https://instagram.com">
+                            <span class="visually-hidden">Наш Инстаграм</span>
+                        </a>
                     </li>
                 </ul>
                 <p class="text main-footer__text">
                     Обратная связь:<br>
-                    <a class="link main-footer__link main-footer__link--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a class="link main-footer__link main-footer__link--yellow main-footer__link--red-active" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
                 <p class="text main-footer__text">
                     Разработано -<br>
-                    <a class="link main-footer__link main-footer__link--yellow" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+                    <a class="link main-footer__link main-footer__link--yellow main-footer__link--red-active" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
                 </p>
             </div>
         </div>
