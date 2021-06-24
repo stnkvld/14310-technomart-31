@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -67,14 +67,18 @@
                 </div>
 
                 <div class="profile__logged" style="display: none;">
-                    <a class="link profile__btn logged-btn" href="blank.html">
-                        <svg class="logged-btn__user" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
+                    <p class="link profile__btn logged-btn" href="blank.html">
+                        <a class="logged-btn__user" href="blank.html">
+                            <svg class="logged-btn__user-icon" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
                         </svg> Равшан Джамшутович
-                        <svg class="logged-btn__logout" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
+                        </a>
+                        <a class="logged-btn__logout" href="blank.html">
+                            <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
                         </svg>
-                    </a>
+                        </a>
+                    </p>
 
                     <ul class="profile__parts">
                         <li class="profile__part">
@@ -122,15 +126,15 @@
             <div class="container">
                 <h2 class="visually-hidden">Категории товаров</h2>
                 <ul class="offer-list categories__list">
-                    <li class="offer-list__item new">
+                    <li class="offer-list__item offer-list__item--materials new">
                         <h3 class="offer-list__title">Материалы</h3>
                         <a class="offer-list__link" href="blank.html">На любой вкус</a>
                     </li>
-                    <li class="offer-list__item offer-list__item--blue">
+                    <li class="offer-list__item offer-list__item--blue offer-list__item--tool">
                         <h3 class="offer-list__title">Инструмент</h3>
                         <a class="offer-list__link" href="blank.html">На все случаи</a>
                     </li>
-                    <li class="offer-list__item offer-list__item--purple">
+                    <li class="offer-list__item offer-list__item--purple offer-list__item--tech">
                         <h3 class="offer-list__title">Техника</h3>
                         <a class="offer-list__link" href="blank.html">Для стройки</a>
                     </li>
@@ -142,7 +146,7 @@
                 <h2 class="visually-hidden">Спецпредложения</h2>
                 <div class="slider special__wrapper">
                     <ul class="slider__list">
-                        <li id="slide-1" class="slider__slide slider__slide--show">
+                        <li id="slide-1" class="slider__slide">
                             <div class="slider__title-wrapper">
                                 <h3 class="slider__title">Перфораторы</h3>
                                 <p class="slider__text">Настоящие мужские игрушки</p>
@@ -185,11 +189,11 @@
                     </ul>
                 </div>
                 <ul class="offer-list special__list">
-                    <li class="offer-list__item special__list-item offer-list__item--green">
+                    <li class="offer-list__item special__list-item offer-list__item--green offer-list__item--discount">
                         <h3 class="offer-list__title">Скидки 50%</h3>
                         <a class="offer-list__link" href="blank.html">На 350 товаров</a>
                     </li>
-                    <li class="offer-list__item special__list-item">
+                    <li class="offer-list__item special__list-item offer-list__item--delivery">
                         <h3 class="offer-list__title">Доставка</h3>
                         <a class="offer-list__link" href="blank.html">Бесплатно</a>
                     </li>
@@ -214,7 +218,7 @@
                             </p>
                             <h3 class="product-card__title">Перфоратор BOSCH BFG 9000</h3>
                             <p class="product-card__old-price">
-                                <del>32500 Р.</del>
+                                <s>32500 Р.</s>
                             </p>
                             <a class="link product-card__price" href="blank.html">25500 Р.</a>
                         </article>
@@ -230,7 +234,7 @@
                             </p>
                             <h3 class="product-card__title">Перфоратор BOSCH BFG 3000</h3>
                             <p class="product-card__old-price">
-                                <del>22500 Р.</del>
+                                <s>22500 Р.</s>
                             </p>
                             <a class="link product-card__price" href="blank.html">15500 Р.</a>
                         </article>
@@ -246,7 +250,7 @@
                             </p>
                             <h3 class="product-card__title">Перфоратор BOSCH BFG 6000</h3>
                             <p class="product-card__old-price">
-                                <del>30500 Р.</del>
+                                <s>30500 Р.</s>
                             </p>
                             <a class="link product-card__price" href="blank.html">25500 Р.</a>
                         </article>
@@ -262,7 +266,7 @@
                             </p>
                             <h3 class="product-card__title">Перфоратор BOSCH BFG 2000</h3>
                             <p class="product-card__old-price">
-                                <del>22500 Р.</del>
+                                <s>22500 Р.</s>
                             </p>
                             <a class="link product-card__price" href="blank.html">12500 Р.</a>
                         </article>
@@ -329,36 +333,36 @@
                 <div class="tabs">
                     <ul class="tabs__list">
                         <li>
-                            <input id="tabs-delivery" class="visually-hidden tabs__radio" type="radio" name="services" value="delivery" checked>
-                            <label class="tabs__label" for="tabs-delivery">
+                            <input id="tab-delivery" class="visually-hidden tabs__radio" type="radio" name="services" value="delivery" checked>
+                            <label class="tabs__label" for="tab-delivery">
                                 Доставка
                             </label>
                         </li>
                         <li>
-                            <input id="tabs-guarantee" class="visually-hidden tabs__radio" type="radio" name="services" value="guarantee">
-                            <label class="tabs__label" for="tabs-guarantee">
+                            <input id="tab-guarantee" class="visually-hidden tabs__radio" type="radio" name="services" value="guarantee">
+                            <label class="tabs__label" for="tab-guarantee">
                                 Гарантия
                             </label>
                         </li>
                         <li>
-                            <input id="tabs-credit" class="visually-hidden tabs__radio" type="radio" name="services" value="credit">
-                            <label class="tabs__label" for="tabs-credit">
+                            <input id="tab-credit" class="visually-hidden tabs__radio" type="radio" name="services" value="credit">
+                            <label class="tabs__label" for="tab-credit">
                                 Кредит
                             </label>
                         </li>
                     </ul>
                     <ul class="tabs__content">
-                        <li class="tabs__content-item tabs__content-item--delivery tabs__content-item--show">
+                        <li id="tab-delivery" class="tabs__content-item tabs__content-item--delivery tabs__content-item--show">
                             <h3 class="title tabs__title">Доставка</h3>
                             <p class="text tabs__content-text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
                         </li>
-                        <li class="tabs__content-item tabs__content-item--guarantee">
+                        <li id="tab-guarantee" class="tabs__content-item tabs__content-item--guarantee">
                             <h3 class="title tabs__title">Гарантия</h3>
                             <p class="text tabs__content-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь
                                 сами.
                             </p>
                         </li>
-                        <li class="tabs__content-item tabs__content-item--credit">
+                        <li id="tab-credit" class="tabs__content-item tabs__content-item--credit">
                             <h3 class="title tabs__title">Кредит</h3>
                             <p class="text tabs__content-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                             <a class="button button--rounded" href="blank.html">Оставить заявку</a>
@@ -397,7 +401,7 @@
         </div>
         <section id="feedback" class="modal feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
-            <form class="feedback__form" action="https://echio.htmlacademy.ru" method="POST">
+            <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
                 <div class="feedback__wrapper">
                     <p class="feedback__group">
                         <label class="feedback__label">
@@ -428,8 +432,9 @@
         </section>
         <section id="map" class="modal map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <!-- Карта -->
-            <img class="map__image" src="img/big-map.png" width="943" height="449" alt="Увеличенная карта расположения офиса Техномарт">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.4369788576605!2d30.315508623681364!3d59.96809346245392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631097376f6bd%3A0xe090f80af171422c!2zU29sb1ByaW50IC0gM2Qg0L_RgNC40L3RgtC10YAg0YDQvtGB0YHQuNC50YHQutC-0LPQviDQv9GA0L7QuNC30LLQvtC00YHRgtCy0LA!5e0!3m2!1sru!2sru!4v1624344526858!5m2!1sru!2sru"
+                width="100%" height="450" style="border:0;" loading="lazy">
+            </iframe>
             <a class="modal__close" href="#close">
                 <span class="visually-hidden">Закрыть окно</span>
             </a>
