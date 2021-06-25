@@ -21,12 +21,12 @@
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                     <input class="search-form__input" type="text" placeholder="Поиск:">
                     <svg class="search-form__icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"
-                    fill="#fff"/>
-                </svg>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"
+                        fill="#fff"/>
+                    </svg>
                 </form>
                 <ul class="user-navigation">
                     <li>
@@ -36,6 +36,11 @@
                         </svg> Закладки: <span>0</span>
                         </a>
                     </li>
+                    <!--
+                        Класс user-navigation__link--added указывает на то,
+                        что товар был добавлен в корзину
+                        или страница была добавлена в закладки
+                    -->
                     <li>
                         <a class="link user-navigation__link user-navigation__link--added" href="blank.html">
                             <svg class="user-navigation__icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/></svg>                            Корзина: <span>10</span>
