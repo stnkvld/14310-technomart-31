@@ -1142,6 +1142,7 @@
 
 .tabs__list {
     position: relative;
+    flex-shrink: 0;
     width: 240px;
     list-style: none;
     padding: 0;
@@ -1195,23 +1196,22 @@
 }
 
 .tabs__content {
-    position: relative;
     flex-grow: 1;
     width: 620px;
-    height: 330px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .tabs__content-item {
-    position: absolute;
-    top: 45px;
-    left: 0;
+    position: relative;
+    display: none;
     width: 100%;
-    height: calc(100% - 45px);
+    min-height: 283px;
+    padding-top: 45px;
+    padding-bottom: 110px;
+    box-sizing: border-box;
     background-color: var(--basic-bg);
-    opacity: 0;
 }
 
 .tabs__content-item:after {
@@ -1232,18 +1232,27 @@
 
 .tabs__content-item--guarantee:after {
     background-image: url(../img/services/guarantee.png);
+    width: 389px;
+    height: 283px;
 }
 
 .tabs__content-item--credit:after {
     background-image: url(../img/services/credit.png);
+    width: 465px;
+    height: 285px;
 }
 
 .tabs__content-item--show {
-    opacity: 1;
+    display: block;
 }
 
 .tabs__content-text {
-    width: 330px;
+    width: 320px;
+    margin-bottom: 0;
+}
+
+.tabs__content-text+.button {
+    margin-top: 26.5px;
 }
 
 
