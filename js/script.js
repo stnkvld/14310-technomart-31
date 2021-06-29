@@ -2,6 +2,10 @@
 
 const feedbackButton = document.querySelector('.button[href="#feedback"]');
 const feedbackPopup = document.querySelector('.modal.feedback');
+const feedbackForm = feedbackPopup.querySelector('.feedback__form');
+const feedbackName = feedbackForm.querySelector('[name="name"]');
+const feedbackEmail = feedbackForm.querySelector('[name="email"]');
+const feedbackText = feedbackForm.querySelector('[name="text"]');
 
 const mapButton = document.querySelector('.link[href="#map"]');
 const mapPopup = document.querySelector('.modal.map');
@@ -12,17 +16,49 @@ const specialSlider = document.querySelector('.slider');
 const specialSliderPrev = specialSlider.querySelector('.slider__btn--prev');
 const specialSliderNext = specialSlider.querySelector('.slider__btn--next');
 
+let isStorageSupport = true;
+let storage = '';
+
+try {
+    storage = localStorage.getItem('name');
+} catch (err) {
+    isStorageSupport = false;
+}
+
 function closePopup(parentPopup) {
     parentPopup.classList.add('modal--close');
     setTimeout(function() {
         parentPopup.classList.remove('modal--show');
         parentPopup.classList.remove('modal--close');
+        parentPopup.classList.remove('modal--error');
     }, 350);
 }
 
 feedbackButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     feedbackPopup.classList.add('modal--show');
+
+    if (storage) {
+        feedbackName.value = localStorage.getItem('name');
+        feedbackEmail.value = localStorage.getItem('email');
+
+        feedbackText.focus();
+    } else {
+        feedbackName.focus();
+    }
+});
+
+feedbackForm.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+
+    if (!feedbackName.value || !feedbackEmail.value) {
+        feedbackPopup.classList.add('modal--error');
+    } else if (isStorageSupport) {
+        localStorage.setItem('name', feedbackName.value);
+        localStorage.setItem('email', feedbackEmail.value);
+
+        evt.target.submit();
+    }
 });
 
 mapButton.addEventListener('click', function(evt) {
