@@ -269,20 +269,20 @@
 }
 
 .search-form__input::-webkit-input-placeholder {
-    color: var(--basic-darkgray);
+    color: var(--basic-white);
 }
 
 .search-form__input:-ms-input-placeholder {
-    color: var(--basic-darkgray);
+    color: var(--basic-white);
 }
 
 .search-form__input::-moz-placeholder {
-    color: var(--basic-darkgray);
+    color: var(--basic-white);
     opacity: 1;
 }
 
 .search-form__input:-moz-placeholder {
-    color: var(--basic-darkgray);
+    color: var(--basic-white);
     opacity: 1;
 }
 
@@ -353,7 +353,7 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    padding: 9px 24px 9px 43px;
+    padding: 9px 23px 9px 47px;
     transition: background-color .2s ease-in-out;
 }
 
@@ -369,8 +369,8 @@
 
 .user-navigation__icon {
     position: absolute;
-    top: 13px;
-    left: 20px;
+    top: 12px;
+    left: 24px;
     opacity: .3;
 }
 
@@ -440,8 +440,7 @@
 }
 
 .main-header__contacts {
-    justify-self: center;
-    text-align: center;
+    padding-left: 93px;
 }
 
 .main-header__phone {
@@ -453,7 +452,7 @@
     vertical-align: middle;
     color: var(--basic-red);
     border: 3px solid var(--basic-white);
-    padding: 7px 50px 8px 74px;
+    padding: 4px 50px 4px 74px;
     box-sizing: border-box;
     margin-bottom: 3px;
     transition: background-color .2s ease-in-out;
@@ -462,7 +461,7 @@
 .main-header__phone:before {
     content: '';
     position: absolute;
-    top: 13px;
+    top: 9px;
     left: 39px;
     width: 19px;
     height: 19px;
@@ -747,7 +746,7 @@
 }
 
 .slider__btn--next {
-    right: 24px;
+    right: 20px;
     transform: rotate(180deg);
 }
 
