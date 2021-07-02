@@ -19,7 +19,10 @@
                     <img src="img/icons/logo.svg" width="108" height="18" alt="Логотип Техномарт">
                 </a>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-                    <input class="search-form__input" type="text" placeholder="Поиск:">
+                    <label for="search-input" class="visually-hidden">
+                      Поиск
+                    </label>
+                    <input id="search-input" class="search-form__input" type="text" placeholder="Поиск:">
                     <svg class="search-form__icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
@@ -62,7 +65,7 @@
             </div>
 
             <div class="profile">
-                <div class="profile__auth" style="display: none;">
+                <div class="profile__auth profile__auth--hide">
                     <a class="link profile__btn profile__btn--login" href="blank.html">
                         <svg class="profile__btn-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                           <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" fill="#C5C5C5"/><path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="#C5C5C5"/>
@@ -154,7 +157,7 @@
                         <div class="range">
                             <div class="range__controls">
                                 <div class="range__scale">
-                                    <div class="range__bar" style="width: 85%"></div>
+                                    <div class="range__bar"></div>
                                 </div>
                                 <button class="range__toggle range__toggle--min" type="button">
                                   <span class="visually-hidden">Цена от</span>
@@ -164,8 +167,14 @@
                                 </button>
                             </div>
                             <div class="range__price-controls">
-                                <input class="range__price" type="number" name="min-price" value="0"> &ndash;
-                                <input class="range__price" type="number" name="max-price" value="30000">
+                                <label>
+                                  <span class="visually-hidden">Минимальная цена</span>
+                                  <input class="range__price" type="number" name="min-price" value="0">
+                                </label> &ndash;
+                                <label>
+                                  <span class="visually-hidden">Максимальная цена</span>
+                                  <input class="range__price" type="number" name="max-price" value="30000">
+                                </label>
                             </div>
                         </div>
                     </fieldset>
